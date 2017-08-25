@@ -1,4 +1,4 @@
-﻿{
+{
   "dependencies": {
     "Microsoft.NETCore.App": {
       "version": "1.0.1",
@@ -20,7 +20,8 @@
     },
     "Microsoft.AspNetCore.StaticFiles": "1.0.0",
     "RestSharp.NetCore": "105.2.3",
-    "Newtonsoft.Json": "9.0.1"
+    "Newtonsoft.Json": "9.0.1",
+    "bootstrap": "3.3.7"
   },
 
   "tools": {

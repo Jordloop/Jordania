@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "11707b0c19c98471f47c5a76380f7df2ad9e0c9c"
+    "signature": "4820233a76524ba2b53d79a0ed77da56ae141907"
   },
   "compilationOptions": {
     "defines": [
@@ -29,12 +29,19 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "RestSharp.NetCore": "105.2.3",
-          "Newtonsoft.Json": "9.0.1"
+          "Newtonsoft.Json": "9.0.1",
+          "bootstrap": "3.3.7"
         },
         "compile": {
           "Jordania.dll": {}
         }
       },
+      "bootstrap/3.3.7": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
+      "jQuery/1.9.1": {},
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0-preview1-24530-04"
@@ -2860,12 +2867,19 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "RestSharp.NetCore": "105.2.3",
-          "Newtonsoft.Json": "9.0.1"
+          "Newtonsoft.Json": "9.0.1",
+          "bootstrap": "3.3.7"
         },
         "runtime": {
           "Jordania.dll": {}
         }
       },
+      "bootstrap/3.3.7": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
+      "jQuery/1.9.1": {},
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0-preview1-24530-04"
@@ -5582,6 +5596,16 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "bootstrap/3.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3YTWhPNh6UcnUvzw9u6A2/hy2w0h4lznxPbX6FY47lFia3+Ib4zBixTpW6YieYA/b2fLXbkjoD59OjcVF3cJXw=="
+    },
+    "jQuery/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw=="
     },
     "Libuv/1.9.0": {
       "type": "package",

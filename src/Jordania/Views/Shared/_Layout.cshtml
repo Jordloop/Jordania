@@ -2,7 +2,6 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
@@ -10,16 +9,25 @@
 <body>
     <script type="text/javascript">
         $(document).ready(function () {
+            //clicked = $(this)[0].id;
+            $('#repo-container').hide();
+            $('.repos').hide();
 
-            $('.repo-box').click(function () {
-                clicked = $(this)[0].id;
-                console.log(clicked);
-                console.log("clicked");
-            });
+
+
+            $('#view-repos').click(function () {
+                $('#repo-container').animate({ width: 'toggle' });
+                $('.repos').fadeIn(1200);
+
+            });                        
         });
     </script>
+
+
     <div>
         @RenderBody()
     </div>
 </body>
 </html>
+
+

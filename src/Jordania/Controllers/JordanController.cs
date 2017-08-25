@@ -15,6 +15,12 @@ namespace Jordania.Controllers
         {
             var MyStarredRepos = Repos.MyStarredRepos();
             ViewBag.StarredRepos = MyStarredRepos;
+            Console.WriteLine(ViewBag.StarredRepos);
+            return View();
+        }
+
+        public IActionResult MyRepos()
+        {
             return View();
         }
     }

@@ -4,24 +4,30 @@
 }
 
 <p>Welcome to Jordania</p>
-<div id="projects-container">
-    @if (@ViewBag.StarredRepos.Count > 0)
-    { 
-        @foreach (var repo in ViewBag.StarredRepos)
+
+<div id="repos-box">
+    
+    <p id="view-repos">Repos</p>
+    
+    <div id="repo-container">
+        @if (@ViewBag.StarredRepos.Count > 0)
         {
-            @if(repo.stargazers_count != "0")
+            @foreach (var repo in ViewBag.StarredRepos)
             {
-                <div class="repo-box" id="@repo.name">
-                    <p>@repo.name</p>
-                    <p>@repo.html_url</p>
-                    <p>@repo.stargazers_count</p>
-                </div>
+                @if (repo.stargazers_count != "0")
+                {
+                    <div class="repos" id="@repo.name">
+                        <p>@repo.name</p>
+                        <p>@repo.html_url</p>
+                        <p>@repo.stargazers_count</p>
+                    </div>
+                }
             }
         }
-    }
-    else
-    {
-        <p>Null</p>
-    }
+        else
+        {
+            <p>Null</p>
+        }
+    </div>
 </div>
 
