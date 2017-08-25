@@ -16,12 +16,12 @@ namespace Jordania.Models
         public string stargazers_count { get; set; }
 
 
-        public static List<Repos> MyStarredRepos(string userName, string sortBy )
+        public static List<Repos> MyStarredRepos()
         {
             //Who we are requesting from       
             var client = new RestClient("https://api.github.com");
             //What we are requesting
-            var request = new RestRequest("/search/repositories?q=user:"+ userName +"&sort=" + sortBy, Method.GET);
+            var request = new RestRequest("/search/repositories?q=user:jordloop&sort=stars", Method.GET);
             //API "Username" and "Password"
             client.Authenticator = new HttpBasicAuthenticator(EnvironmentVariables.AuthName, EnvironmentVariables.AuthToken);
             //API call Header

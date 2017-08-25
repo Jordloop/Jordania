@@ -10,16 +10,10 @@ namespace Jordania.Controllers
 {
     public class JordanController : Controller
     {
+        
         public IActionResult Index()
         {
-            ViewBag.Repos = new List<Repos>() { };
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Index(string userName, string sortBy)
-        {
-            var MyStarredRepos = Repos.MyStarredRepos(userName, sortBy);
+            var MyStarredRepos = Repos.MyStarredRepos();
             ViewBag.StarredRepos = MyStarredRepos;
             return View();
         }
