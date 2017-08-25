@@ -4,14 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="~/js/JavaScript.js"></script>
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <script type="text/javascript">
         $(document).ready(function () {
-            console.log("Ding");
+
+            $('.repo-box').click(function () {
+                clicked = $(this)[0].id;
+                console.log(clicked);
+                console.log("clicked");
+            });
         });
     </script>
     <div>
