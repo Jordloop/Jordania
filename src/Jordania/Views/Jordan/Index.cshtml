@@ -13,3 +13,17 @@
     <input type="hidden" id="" value="stars" name="sortBy" />
     <input type="submit" value="Get" />
 }
+
+@if(@ViewBag.StarredRepos > 0)
+{
+    @foreach (var repo in ViewBag.StarredRepos)
+    {
+        <p>repo.name</p>
+        <p>repo.html_url</p>
+        <p>repo.stargazers_count</p>
+    }
+}
+else
+{
+<p>Call Api to see repos</p>
+}

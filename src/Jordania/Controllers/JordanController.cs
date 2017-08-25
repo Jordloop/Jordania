@@ -20,7 +20,7 @@ namespace Jordania.Controllers
         public IActionResult Index(string userName, string sortBy)
         {
             var MyStarredRepos = Repos.MyStarredRepos(userName, sortBy);
-            ViewBag.Repos = MyStarredRepos;
+            ViewBag.StarredRepos = MyStarredRepos;
             return View();
         }
     }

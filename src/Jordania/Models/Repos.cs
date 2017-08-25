@@ -33,17 +33,8 @@ namespace Jordania.Models
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
-            
-            var repoInfo = JsonConvert.DeserializeObject<List<Repos>>(jsonResponse.ToString());
-            Console.WriteLine(repoInfo);
-            List<Repos> searchResults = new List<Repos>();
-            for (int i = 0; i < repoInfo.Count; i++)
-            {
-                searchResults.Add(repoInfo[i]);
-            }
-            Console.WriteLine(searchResults);
+            var repoInfo = JsonConvert.DeserializeObject<List<Repos>>(jsonResponse["items"].ToString());
             return repoInfo;
         }
 
