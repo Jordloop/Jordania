@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Jordan-Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Jordania.Models.Repos
+
+<p>Welcome to Jordania</p>
+
+@using (Html.BeginForm())
+{
+    <input type="hidden" id="" value="jordloop" name="userName" />
+    <input type="hidden" id="" value="stars" name="sortBy" />
+    <input type="submit" value="Get" />
+}
