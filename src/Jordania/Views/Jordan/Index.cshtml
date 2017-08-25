@@ -14,13 +14,13 @@
     <input type="submit" value="Get" />
 }
 
-@if(@ViewBag.StarredRepos > 0)
+@if (ViewBag.StarredRepos.Count > 0)
 {
     @foreach (var repo in ViewBag.StarredRepos)
     {
-        <p>repo.name</p>
-        <p>repo.html_url</p>
-        <p>repo.stargazers_count</p>
+        <p>@repo.name</p>
+        <p>@repo.html_url</p>
+        <p>@repo.stargazers_count</p>
     }
 }
 else
