@@ -9,9 +9,12 @@
 { 
     @foreach (var repo in ViewBag.StarredRepos)
     {
-        <p>@repo.name</p>
-        <p>@repo.html_url</p>
+        @if(repo.stargazers_count != "0")
+        {
+            <p>@repo.name</p>
+            <p>@repo.html_url</p>
             <p>@repo.stargazers_count</p>
+        }
     }
 }
 else
