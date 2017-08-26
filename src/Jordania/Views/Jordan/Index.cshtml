@@ -22,6 +22,7 @@
                         <div class="repos" id="@repo.name">
                             <img class="logo" src="https://image.flaticon.com/icons/png/512/25/25231.png" width="50" height="50"/>
                             <h3 class="link"><a href="@repo.html_url">@repo.name</a></h3>
+                            <p class="language">@repo.language</p>
                             @if (repo.stargazers_count == "1")
                             {
                                 <p class="stars">@repo.stargazers_count star</p>
@@ -30,7 +31,6 @@
                             {
                             <p class="stars">@repo.stargazers_count stars</p>
                             }
-                            <p class="language">@repo.language</p>
                             <p class="description">@repo.description</p>
 
                         </div>
