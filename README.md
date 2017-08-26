@@ -30,6 +30,7 @@ If you have any issues or have questions, ideas, concerns, or contributions plea
 * C#
 * ASP.NET
 * VS 2015
+* MVC5
 * Razor
 * HTML/CSS
 * Github Api
