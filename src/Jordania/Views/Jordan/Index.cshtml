@@ -7,7 +7,7 @@
 
 <div id="repos-box">
     
-    <p id="view-repos">Repos</p>
+    <p id="view-repos">Click here to view my starred repos.</p>
     
     <div id="repo-container">
         @if (@ViewBag.StarredRepos.Count > 0)
@@ -17,16 +17,17 @@
                 @if (repo.stargazers_count != "0")
                 {
                     <div class="repos" id="@repo.name">
-                        <p>@repo.name</p>
-                        <p>@repo.html_url</p>
-                        <p>@repo.stargazers_count</p>
+                        <p>Project Name: @repo.name</p>
+                        <a href="@repo.html_url">Link</a>
+                        <p>Star Count:@repo.stargazers_count</p>
                     </div>
+                    <hr />
                 }
             }
         }
         else
         {
-            <p>Null</p>
+            <p>There are 0 starred repositories</p>
         }
     </div>
 </div>

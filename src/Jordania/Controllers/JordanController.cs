@@ -19,9 +19,5 @@ namespace Jordania.Controllers
             return View();
         }
 
-        public IActionResult MyRepos()
-        {
-            return View();
-        }
     }
 }

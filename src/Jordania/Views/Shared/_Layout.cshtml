@@ -9,11 +9,8 @@
 <body>
     <script type="text/javascript">
         $(document).ready(function () {
-            //clicked = $(this)[0].id;
             $('#repo-container').hide();
             $('.repos').hide();
-
-
 
             $('#view-repos').click(function () {
                 $('#repo-container').animate({ width: 'toggle' });
@@ -22,8 +19,6 @@
             });                        
         });
     </script>
-
-
     <div>
         @RenderBody()
     </div>
