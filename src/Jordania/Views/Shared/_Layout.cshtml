@@ -2,24 +2,25 @@
 
 <html>
 <head>
+    <link href="~/CSS/MainStyle.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <link href="~/CSS/styles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#repo-container').hide();
-            $('.repos').hide();
+            $('#repos-container').hide();
+            //$('.repos').hide();
 
             $('#view-repos').click(function () {
-                $('#repo-container').animate({ width: 'toggle' });
-                $('.repos').fadeIn();
+                $('#repos-container').animate({ width: 'toggle' });
+                //$('.repos').fadeIn();
 
             });                        
         });
     </script>
-    <div>
+
+    <div id="main-container">
         @RenderBody()
     </div>
 </body>

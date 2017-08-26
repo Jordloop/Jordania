@@ -23,6 +23,7 @@ namespace Jordania
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
             services.AddEntityFramework()
                 .AddDbContext<JordaniaDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
@@ -34,6 +35,7 @@ namespace Jordania
         public void Configure(IApplicationBuilder app)
         {
             app.UseIdentity();
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

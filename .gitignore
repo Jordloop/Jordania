@@ -1,1 +1,30 @@
 EnvironmentVariables.cs
+
+
+
+
+<div id="repos-box">
+    
+    <p id="view-repos">Click here to view my starred repos.</p>
+    
+    <div id="repos-container">
+        @if (@ViewBag.StarredRepos.Count > 0)
+        {
+            @foreach (var repo in ViewBag.StarredRepos)
+            {
+                @if (repo.stargazers_count != "0")
+                {
+                    <hr />
+                    <div class="repos" id="@repo.name">
+                        <p>Check Out <a href="@repo.html_url">@repo.name</a></p>
+                        <p>Star Count:@repo.stargazers_count</p>
+                    </div>
+                }
+            }
+        }
+        else
+        {
+            <p>There are 0 starred repositories</p>
+        }
+    </div>
+</div>
