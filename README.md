@@ -24,9 +24,7 @@ This web application will serve as my personal portfolio.
 
 ## Known Bugs
 
-* css styling is not rendering.
-  console message:
-  <pre>Resource interpreted as Stylesheet but transferred with MIME type text/plain:  "http://localhost:58713/CSS/styles.css".</pre>
+* No Known Bugs
 
 ## Support and contact details
 
