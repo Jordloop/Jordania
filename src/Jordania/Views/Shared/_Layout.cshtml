@@ -13,9 +13,13 @@
             //$('.repos').hide();
 
             $('#view-repos').click(function () {
-                $('#repos-container').animate({ width: 'toggle' });
+                $('#repos-container').fadeIn();
+                    //animate({ width: 'toggle' });
                 //$('.repos').fadeIn();
+            });
 
+            $('#close-repos').click(function () {
+                $('#repos-container').fadeOut();
             });                        
         });
     </script>
