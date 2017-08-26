@@ -1,0 +1,39 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+#landing-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+#image-container {
+
+    margin-top: 45px;
+    position: absolute;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/a6/b1/73/a6b173a11a915d2922b029ba49779a08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    border: 1px solid #ddd;
+}
+.enter a {
+    color: whitesmoke;
+    font-size: 32pt;
+    display: block;
+    text-decoration: none;
+}
+#title {
+
+}
+#title h1 { 
+
+ 
+
+    color: whitesmoke;
+    font-size: 72pt;
+}
