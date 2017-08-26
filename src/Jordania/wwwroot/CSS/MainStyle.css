@@ -27,20 +27,42 @@ body {
 }
 
 .repos {
-    height: 25%;
-    width: 100%;
+    height: auto;
+    width: 95%;
     left:  0;
     display: flex;
     flex-wrap: wrap;
-    align-content:  space-around;
+    border: solid whitesmoke 1px;
+    margin: 15px;
+    border-radius: 15px;
+
 }
 
 .repos * {
-    color: whitesmoke;
+   color: whitesmoke;
    text-align: left; 
-   border: solid blue 1px;
 }
 
+.description {
+    width: 100%;
+    padding-left: 10%;
+}
+.stars {
+    padding: 15px;
+}
+.language {
+    padding-top:15px;
+}
+.link {
+    border: solid whitesmoke 1px;
+    border-radius: 10px;
+    box-shadow: 3px 1px 1px whitesmoke;}
+.logo {
+    margin: 15px;
+    background-color: whitesmoke;
+    border: solid whitesmoke 1px;
+    border-radius: 10px;
+}
 .main-content {
     width: 70%;
     height: 100%;
@@ -50,6 +72,7 @@ body {
 }
 
 .navbar {
+    color: whitesmoke;
     text-align: center;
     overflow: hidden;
     float: left;
