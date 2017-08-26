@@ -6,6 +6,7 @@ body {
     background-color: lightcyan;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 .jordan-index-view {
@@ -22,9 +23,25 @@ body {
     width: 100%;
     height: 100%;
     bottom: 0;
+    flex-direction: column;
 }
 
-.main {
+.repos {
+    height: 25%;
+    width: 100%;
+    left:  0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:  space-around;
+}
+
+.repos * {
+    color: whitesmoke;
+   text-align: left; 
+   border: solid blue 1px;
+}
+
+.main-content {
     width: 70%;
     height: 100%;
     text-align: center;
@@ -37,9 +54,10 @@ body {
     overflow: hidden;
     float: left;
     background-color: #333;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
     width: 30%;
     height: 100%;
     vertical-align: middle;

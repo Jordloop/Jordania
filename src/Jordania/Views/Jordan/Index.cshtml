@@ -15,17 +15,22 @@
 
         <div id="repos-container">
             <div id="close-repos">X</div>
+            <hr />
             @if (@ViewBag.StarredRepos.Count > 0)
             {
                 @foreach (var repo in ViewBag.StarredRepos)
                 {
                     @if (repo.stargazers_count != "0")
                     {
-                        <hr />
                         <div class="repos" id="@repo.name">
-                            <p>Check Out <a href="@repo.html_url">@repo.name</a></p>
+                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="50" height="50"/>
+                            <p><a href="@repo.html_url">@repo.name</a></p>
                             <p>Star Count:@repo.stargazers_count</p>
+                            <p>Language: @repo.language</p>
+                            <p>Description: @repo.description</p>
+
                         </div>
+                        <hr />
                     }
                 }
             }
@@ -36,7 +41,7 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="main-content">
         <p>Some text some text some text some text..</p>
     </div>
 </div>
