@@ -8,8 +8,15 @@ This web application will serve as my personal portfolio.
 
 ## Setup/Installation Requirements
 
-Clone repository using PowerShell:<br>
+* Clone repository using PowerShell:<br>
   <code>> git clone https://github.com/Jordloop/Jordania.git</code>
+* Create Models/EnvironmentVariables.cs
+* Include your GitHub API AuthName and AuthToken:
+  <code>    public class EnvironmentVariables
+    {
+        public static string AuthName = "YOUR_USER_NAME";
+        public static string AuthToken = "YOUR_AUTH_TOKEN";
+    }</code>
 
 ## Specs
 
