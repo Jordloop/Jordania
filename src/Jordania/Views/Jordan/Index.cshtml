@@ -10,9 +10,9 @@
     <div class="navbar">
         <h2>Navigation</h2>
         <p id="view-repos">Projects</p>
-
         <div id="repos-container">
             <div id="close-repos">Close</div>
+            <hr />
             @if (@ViewBag.StarredRepos.Count > 0)
             {
                 @foreach (var repo in ViewBag.StarredRepos)
@@ -32,8 +32,8 @@
                             <p class="stars">@repo.stargazers_count stars</p>
                             }
                             <p class="description">@repo.description</p>
-
                         </div>
+                            <hr />
                     }
                 }
             }
